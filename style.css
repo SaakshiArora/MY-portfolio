@@ -1,24 +1,406 @@
- * {
-     margin: 0;
-     padding: 0;
- }
- 
- .container {
-     width: 100%;
-     height: 100vh;
-     background-image: url(background\ image.png);
-     background-position: center;
-     background-size: cover;
- }
- 
- .navbar {
-     height: 12%;
-     display: flex;
-     align-items: center;
- }
- 
- .logo {
-     width: 5px;
-     height: 10px;
-     cursor: pointer;
- }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 0 20px;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 200, 0);
+}
+
+.Header-left {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.Header-right {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    width: 500px;
+    align-items: center;
+}
+
+.Header-right button {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+}
+
+section.home-page-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background-color: rgb(255, 200, 0);
+    border-bottom: 1px solid;
+    height: 400px;
+    padding-top: 60px;
+    padding-left: 20px;
+}
+
+.row {
+    font-size: 50px;
+}
+
+.row button {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    height: 30px;
+    width: 150px;
+}
+
+.heading h3 {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.new-article {
+    width: 33%;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.new-article .left {
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+.new-article .right {
+    flex-grow: 4;
+}
+
+.left h2 {
+    color: grey;
+}
+
+.right h3 {
+    font-size: 20px;
+    font-weight: 100;
+    padding-left: 20px;
+}
+
+.right h2 {
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+.right h4 {
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+.Top {
+    padding: 40px;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Top:hover {
+    color: grey;
+}
+
+.Top Button {
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.Top Button:hover {
+    background: rgba(245, 239, 239, 0.776);
+}
+
+section.second-page-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.section-left {
+    padding: 40px;
+}
+
+.section-left h1 {
+    font-size: 60px;
+}
+
+.section-left button {
+    border: 1px solid purple;
+    color: white;
+    background-color: blueviolet;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 18px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.section-left button:hover {
+    background: white;
+    color: purple;
+    border-radius: 4px;
+}
+
+.section-right img {
+    width: 600px;
+    height: 400px;
+}
+
+article.second-page-article {
+    display: flex;
+    padding: 20px;
+}
+
+.article-left img {
+    width: 600px;
+    height: 400px;
+}
+
+.article-right h2 {
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.article-right p {
+    padding-bottom: 2px;
+    color: grey;
+}
+
+.progress {
+    padding: 40px;
+}
+
+.progress h1 {
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.progress h2 {
+    padding-bottom: 20px;
+    font-weight: lighter;
+    padding-top: 10px;
+}
+
+.progress-bar1 {
+    width: 100%;
+    height: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: grey;
+}
+
+.progress-bar-fill1 {
+    height: 15px;
+    width: 90%;
+    background: blueviolet;
+}
+
+.progress-bar2 {
+    width: 100%;
+    height: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: grey;
+}
+
+.progress-bar-fill2 {
+    height: 15px;
+    width: 70%;
+    background: blueviolet;
+}
+
+.progress-bar3 {
+    width: 100%;
+    height: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: grey;
+}
+
+.progress-bar-fill3 {
+    height: 15px;
+    width: 50%;
+    background: blueviolet;
+}
+
+.details {
+    padding: 40px;
+    padding-left: 60px;
+}
+
+.details1 h1 {
+    font-size: 50px;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+
+.details1 img {
+    padding-bottom: 10px;
+    height: 80px;
+}
+
+.details1 {
+    border-bottom: 2px solid rgba(128, 128, 128, 0.936);
+}
+
+.details1 h2 {
+    padding-bottom: 10px;
+}
+
+.details1 h5 {
+    font-weight: lighter;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.details1 h4 {
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.details1 ul {
+    padding-left: 40px;
+    color: grey;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.details2 img {
+    padding-bottom: 10px;
+    height: 80px;
+    padding-top: 40px;
+}
+
+.details2 {
+    border-bottom: 2px solid rgba(128, 128, 128, 0.936);
+}
+
+.details2 h2 {
+    padding-bottom: 10px;
+}
+
+.details2 h5 {
+    font-weight: lighter;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.details2 h4 {
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.details2 ul {
+    padding-left: 40px;
+    color: grey;
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.projects {
+    padding: 40px;
+    margin: 10px;
+}
+
+.projects h3 {
+    padding-bottom: 15px;
+    color: grey;
+    padding-top: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card1 {
+    box-shadow: 0px 2px 4px 0px;
+    transition: 0.3 s;
+    width: 500px;
+}
+
+.card2 {
+    box-shadow: 0px 2px 4px 0px;
+    transition: 0.3 s;
+    width: 500px;
+}
+
+.container {
+    text-align: center;
+    padding: 8px 10px;
+}
+
+.container p {
+    padding: 5px;
+    padding-top: 5px;
+}
+
+.card button {
+    color: white;
+    background-color: blueviolet;
+    border-radius: 4px;
+    border: 1px solid blueviolet;
+    padding: 4px;
+}
+
+footer {
+    padding: 40px;
+    padding-left: 60px;
+    Border-bottom: 2px solid;
+}
+
+.footer-left h1 {
+    padding-bottom: 8px;
+}
+
+.footer-left h3 {
+    padding-bottom: 8px;
+    color: grey;
+}
+
+.footer-left h4 {
+    padding-top: 8px;
+}
+
+@media only screen and (min-width: 100px)and (max-width:400px) {
+    .top {
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+        flex-direction: column;
+    }
+    .card1 {
+        width: 500px;
+        margin-bottom: 40px;
+    }
+    .details {
+        width: 500px;
+    }
+    section.second-page-section {
+        width: 100%;
+    }
+    .progress {
+        width: 100%;
+    }
+}
